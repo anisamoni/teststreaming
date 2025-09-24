@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stream — Match</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="matchTitle">Match</h1>
+    <p class="subtitle" id="matchTime">Loading time...</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <div id="channelsList" class="channels-list">
+        <!-- channel buttons will be injected here -->
+      </div>
+
+      <div class="player-wrap">
+        <iframe id="playerFrame" title="Stream player" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" frameborder="0"></iframe>
+      </div>
+
+      <p id="streamStatus" class="status"></p>
+
+      <div class="nav-links">
+        <a href="index.html">← Back to schedule</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Embedded streams come from the schedule source. If a stream doesn't load, try another channel above.</small>
+  </footer>
+
+  <script src="stream.js"></script>
+</body>
+</html>
