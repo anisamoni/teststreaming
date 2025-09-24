@@ -19,7 +19,7 @@ body{
 }
 
 .container{max-width:1024px;margin:24px auto;padding:16px;}
-.site-header{padding:18px 16px;text-align:center}
+.site-header{padding:5px 10px;text-align:center}
 .site-header h1{margin:0;font-size:1.6rem}
 .subtitle{margin:6px 0 0;color:var(--muted)}
 
@@ -141,3 +141,34 @@ iframe#playerFrame{width:100%;height:560px;border:0}
   margin-left: 4px;
 }
 
+
+
+.site-footer { background:#0b1220; padding:20px; margin-top:30px; text-align:center; font-size:0.9rem; }
+.footer-nav a { color:var(--muted); margin:0 8px; text-decoration:none; }
+.footer-nav a:hover { color:var(--accent); }
+
+.logo {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  color: #d5d5d5;
+}
