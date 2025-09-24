@@ -235,6 +235,10 @@ function updateLiveCount() {
 		// ✅ Encode entire match data in URL for cross-site support
     const encoded = encodeURIComponent(JSON.stringify(m));
     link.href = `https://anisamoni.github.io/newsitetesting2/?match=${encoded}`;
+
+		// ✅ Open in new tab with nofollow
+link.target = "_blank";
+link.rel = "nofollow noopener noreferrer";
       
 
 
@@ -274,5 +278,6 @@ function updateLiveCount() {
   loadAndRender();
 
 });
+
 
 
