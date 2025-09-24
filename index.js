@@ -229,7 +229,16 @@ function updateLiveCount() {
       const link = document.createElement("a");
       link.className = "btn-link";
       link.textContent = "Watch";
-      link.href = `stream.html?idx=${idx}`;
+
+
+
+		// ✅ Encode entire match data in URL for cross-site support
+    const encoded = encodeURIComponent(JSON.stringify(m));
+    link.href = `https://yourstreamsite.com/stream.html?match=${encoded}`;
+      
+
+
+		
       tdLink.appendChild(link);
 
       tr.appendChild(tdTime);
@@ -265,3 +274,4 @@ function updateLiveCount() {
   loadAndRender();
 
 });
+
