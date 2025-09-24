@@ -23,7 +23,12 @@ body{
 .site-header h1{margin:0;font-size:1.6rem}
 .subtitle{margin:6px 0 0;color:var(--muted)}
 
-.controls{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.controls {
+  display: flex;
+  justify-content: center;  /* ✅ Center the whole controls section */
+  align-items: center;
+  margin-bottom: 12px;
+}
 button{background:var(--accent);border:none;padding:8px 12px;border-radius:8px;color:#042022;cursor:pointer}
 button:hover{opacity:0.95}
 #lastUpdate{color:var(--muted);font-size:0.9rem}
@@ -114,6 +119,7 @@ iframe#playerFrame{width:100%;height:560px;border:0}
 
 .filters {
   display: flex;
+  justify-content: center;  /* ✅ Center buttons inside filters */
   gap: 8px;
 }
 
@@ -172,3 +178,4 @@ iframe#playerFrame{width:100%;height:560px;border:0}
 .main-nav a:hover {
   color: #d5d5d5;
 }
+
